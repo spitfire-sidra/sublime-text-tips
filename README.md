@@ -19,7 +19,7 @@ Command + Shift + P
 
 圖示:
 
-
+![Command Palette](./images/command_palette_2.png)
 
 ## Python Console
 
@@ -33,7 +33,7 @@ Ctrl + `
 
 圖示:
 
-
+![Python Console](./images/python_console.gif)
 
 ## 多重選取
 
@@ -41,13 +41,15 @@ Ctrl + `
 
 多重選取 & 編輯示意圖:
 
-### 快捷鍵 1
+![Multiple Selection](./images/multiple_selection.gif)
+
+快捷鍵 1
 
 1. 選取文字之後
 2. **重複** 按 `Commando + D` 可以一次將所有相同文字選取起來
 3. 依照需求進行編輯
 
-### 快捷鍵 2
+快捷鍵 2
 
 1. 選取文字之後
 2. 按 `Ctrl + Commando + G` 可以一次將相同文字選起來
@@ -68,7 +70,7 @@ Ctrl + `
 
 示意圖:
 
-
+![Swap Line](./images/swap_line.gif)
 
 快捷鍵:
 
@@ -89,13 +91,17 @@ Command + /
 快捷鍵 1:
 
 1. 選取要註解的文字
-2. 按 `command + shift + /`
+2. 按 `Command + Shift + /`
 
 快捷鍵 2:
 
 1. 選取要註解的文字
 2. 按 `Command + Shift + P` 呼叫 `Command Palette`
 3. 輸入 `toggle comment` 或 `toggle block comment`
+
+    > Toggle comment -> 單行註解
+    >
+    > Toggle block comment -> 多行註解
 
 ## 文字編輯
 
@@ -208,11 +214,7 @@ Command + Alt + 1
 Command + Alt + .
 ```
 
-----
-
-更多快捷鍵:
-
-http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html
+更多關於 [SublimeText 快捷鍵](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html)
 
 
 # SublimeText 基本設定 (Mac OS X)
