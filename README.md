@@ -320,7 +320,7 @@ Command + ,
     "use_tab_stops": true,
     "word_wrap": true,
     "wrap_width": 80,
-    	"file_exclude_patterns":
+    "file_exclude_patterns":
     [
         "*.pyc"
     ],
