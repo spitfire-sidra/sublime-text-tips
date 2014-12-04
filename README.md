@@ -186,6 +186,7 @@ Command + Alt + Shift + 2/3
 ```
 
 > 2 代表切 2 格
+> 
 > 3 代表切 3 格
 
 ### 垂直切割視窗
@@ -219,23 +220,47 @@ Command + Alt + .
 
 # SublimeText 基本設定 (Mac OS X)
 
-Preferences > Settings — User 可以打開設定檔 (快捷鍵: `command + ,`)
+SublimeText 也提供了設定檔的功能，讓使用者能夠針對自己的習慣客制化 SublimeText。例如，佈景主題的更換、Tab寬度設定、尺規的顯示等等，這些都能夠在設定檔中進行設定。
 
-貼上以下設定 (註：Sublime Text所有設定檔都是 JSON 格式)
+SublimeText 所有設定檔都是 JSON 格式，因此要注意設定時是否有違反 JSON 格式的地方。
+
+而 SublimeText 設定檔一般可分為`使用者設定檔`、 `套件設定檔`、`程式語言設定檔`幾種，接下來的部分會針對`使用者設定檔`與`程式語言設定檔`進行解說。
+
+## 打開使用者設定檔
+
+```
+Preferences > Settings — User
+```
+
+操作圖示：
+
+![Settings - User](./images/settings_user.png)
+
+快捷鍵:
+
+```
+Command + ,
+```
+
+## 使用者設定檔範例
+
+事實上，並沒有硬性規定`使用者設定檔`必須放置什麼內容，一切依使用者習慣為主。有些使用者喜歡將設定檔一併放置於`使用者設定檔`中，有些使用者則喜歡依照程式語言進行不同的設定。
+
+以下是編者的範例設定檔，各位可依照自己的需求進行修正。詳細的設定選項解說，可參閱[這裡](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/settings.html)。
 
 ```
 {
-	"always_show_minimap_viewport": true, // 顯示右邊的縮圖
-	"draw_minimap_border": true, // 右邊的縮圖要畫邊線
-	"caret_style": "solid",  // 將游標變 no blinking
-	"wide_caret": true, // 將游標變寬
-	"file_exclude_patterns": // 要忽略的檔名格式
+	"always_show_minimap_viewport": true,
+	"draw_minimap_border": true,
+	"caret_style": "solid",
+	"wide_caret": true,
+	"file_exclude_patterns":
     [
         ".DS_Store",
         "*.pid",
         "*.pyc"
     ],
-	"folder_exclude_patterns": // 會被Sublime Text忽略的資料夾名，不會顯示在 Sidebar
+	"folder_exclude_patterns": 
 	[
 		".svn",
 		".git",
@@ -246,54 +271,77 @@ Preferences > Settings — User 可以打開設定檔 (快捷鍵: `command + ,`)
 	"font_size": 18,
 	"ignored_packages":
 	[
-	    "vintage" // 如果想打開 vi 模式，就刪除此行
+	    "vintage"
 	],
-	"rulers": // 尺標，寫程式經常要注意是否寫太長，就可以用尺標提醒自己
+	"rulers":
  	[
 		72,
 		79
 	],
-	"tab_size": 4, // Tab 的寬度，4 個 Space 的寬度
-	"translate_tabs_to_spaces": true, // 強制將 Tab 用 Space 來取代
-	"trim_trailing_white_space_on_save": true,  // 存檔時，自動將行尾的空白去掉
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true, 
+	"trim_trailing_white_space_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
 }
 ```
-## 不同語言不同設定檔
 
-For language specific settings click Sublime Text > Preferences > Settings – More > Syntax Specific – User. Then save the file using the following format: LANGUAGE.sublime-settings. So, for Python-specific settings, save the file as `Python.sublime-settings`.
+## 程式語言設定檔
+
+由於不同的程式語言會有不同的 Coding Style ，因此 SublimeText 中也可以針對不同的程式語言進行設定。
+
+設定方式:
+
+1. 開啓新的設定檔
+
+    ![Syntax Specific Settings](./images/settings_language.png)
+
+    ```
+    Sublime Text > Preferences > Settings – More > Syntax Specific – User
+    ```
+
+2. 輸入設定
+
+3. 將檔案名稱存成 `LANGUAGE.sublime-settings`
+    > 例如 Python 就要存成 `Python.sublime-settings`
+
+`Python.sublime-settings`範例:
 
 ```
 {
-    // editor options
     "draw_white_space": "all",
-
-    // tabs and whitespace
     "auto_indent": true,
     "rulers": [79],
     "smart_indent": true,
-    "tab_size": 4,
     "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true,
+    "ensure_newline_at_eof_on_save": true,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true, 
     "use_tab_stops": true,
     "word_wrap": true,
-    "wrap_width": 80
+    "wrap_width": 80,
+    	"file_exclude_patterns":
+    [
+        "*.pyc"
+    ],
 }
 ```
 
-更多設定資訊 http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/settings.html
+## 更換字體的設定
 
-## 更換字體
-
-推薦程式用的字體下載 http://www.slant.co/topics/67/~what-are-the-best-programming-fonts
+字體的更換也可以透過設定檔達成，以下是字體的設定檔範例：
 
 ```
-    // Font設定範例
     "font_face": "Ubuntu Mono",
     "font_size": 16.0,
     "font_options": ["subpixel_antialias", "no_bold"],
     "line_padding_bottom": 0,
     "line_padding_top": 0,
 ```
+
+受推薦程式開發用的[字體下載](http://www.slant.co/topics/67/~what-are-the-best-programming-fonts)
+
+# SublimeText 套件
 
 ## 必裝 Packages
 
