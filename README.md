@@ -1,73 +1,221 @@
 sublime-text-tips
 =================
 
-<link rel="stylesheet" href="http://michaelhue.com/keyscss/keyscss/keys.css" type="text/css" />
+SublimeText 是近年迅速竄紅的文字編輯器之一，受到很多前端以及程式設計師的喜愛。但歷經了 SublimeText 2 以及 SublimeText 3 兩種版本的演進之後，網路上眾多對於如何設定與使用 SublimeText 的相關文件已有些雜亂無章。為此，本文件希望透過整理，將雜亂的資訊整合，以降低進入門檻，便利他人迅速學習使用 SublimeText 。
 
-## Useful Shortcuts (Mac OS X)
+# Useful Shortcuts (Mac OS X)
 
-### 指令輸入視窗 (Command Palette)
+事實上，學會利用 SublimeText 快捷鍵是提升編輯效率的一大良方。本章節在此條列較常被使用的幾種快捷鍵，可使人迅速體驗 SublimeText 的魅力。
 
-- command + shift + P
+## Command Palette
 
-### Python Console
+`Command Palette` 是 SublimeText 的重要功能之一，許多的功能都可以透過 `Command Palette` 進行呼叫，例如自動美化排版、設定 Language Syntax 等，因此在使用 SublimeText 過程中，是絕對少不了呼叫 `Command Palette` 的。
 
-Ctrl+`
+快捷鍵:
 
-### 多重選取
+```
+Command + Shift + P
+```
 
-- 選取文字之後 一直按 `command + d` 可以一個個將相同的文字選起來 然後就可以一次修改
-
-- 選取文字之後，按 `ctrl + command + G` 就可以一次將所有相同文字都選起來
-
-### 行操作
-
-- 合併多行成一行 選起要合併的文字之後 按 `command + j`
-
-- 上下行互換 `command + ctrl + 上/下 方向鍵`
-
-- 多行註解 選取文字之後 `command + shift + /`, 單行是 `command + /`
-
-- 多行註解 選取文字之後 `command + shift + P` 輸入 toggle comment, toggle block comment
-
-### 文字編輯
-
-- 大小寫轉換 選取文字之後  `command + k, u/U`
-
-- 大小寫轉換  選取文字之後 `command + shift + P` 輸入 title, lower case, upper case
-
-### 搜尋/取代
-
-- 全專案搜尋 ＆ 取代  `command + shitf + f`
-
-### 游標操作
-
-- 跳去某一行 command + p 輸入 :行數
-
-- 跳到對應的 大小括號 中括號 `ctrl + m`
-
-- 跳至第幾行 `ctrl+G` 後輸入行號
-
-### 捲軸操作
-
-- 移動捲軸 `ctrl + alt + 上/下 方向鍵`
-
-### 分頁操作
-
-- 分頁間切換 `command + alt + 左右方向鍵`
-
-- 水平切割視窗 `command + alt + shift + 2/3/4`
-
-- 垂直切割視窗 `command + alt + 2/3/4`
-
-### HTML
-
-關閉目前的 html 標籤 `command + alt + .`
+圖示:
 
 
-更多: http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html
+
+## Python Console
+
+SublimeText 其實內建有 Python Console，對於有在撰寫 Python 的開發者其實可以嘗試看看。此外，著名的 SublimeText `Package Control` 套件就是透過 Python Console 進行安裝的。
+
+快捷鍵:
+
+```
+Ctrl + `
+```
+
+圖示:
 
 
-## 基本設定 (Mac OS X)
+
+## 多重選取
+
+多重選取是 SublimeText 其中一個相當實用的功能，對於需要經常修正程式變數名稱的人而言，是一個相當俱有吸引力的功能。
+
+多重選取 & 編輯示意圖:
+
+### 快捷鍵 1
+
+1. 選取文字之後
+2. **重複** 按 `Commando + D` 可以一次將所有相同文字選取起來
+3. 依照需求進行編輯
+
+### 快捷鍵 2
+
+1. 選取文字之後
+2. 按 `Ctrl + Commando + G` 可以一次將相同文字選起來
+3. 依照需求進行編輯
+
+## 行操作
+
+### 合併多行成一行
+
+示意圖:
+
+快捷鍵:
+
+1. 選取要合併的文字
+2. 按 `Command + J`
+
+### 上下行互換
+
+示意圖:
+
+
+
+快捷鍵:
+
+```
+Command + Ctrl + 上/下方向鍵
+```
+
+### 單行註解
+
+快捷鍵:
+
+```
+Command + /
+```
+
+### 多行註解
+
+快捷鍵 1:
+
+1. 選取要註解的文字
+2. 按 `command + shift + /`
+
+快捷鍵 2:
+
+1. 選取要註解的文字
+2. 按 `Command + Shift + P` 呼叫 `Command Palette`
+3. 輸入 `toggle comment` 或 `toggle block comment`
+
+## 文字編輯
+
+### 大小寫轉換
+
+快捷鍵 1:
+
+1. 選取文字
+2. 按 `Command + K` 放開後，迅速按 `u` 或 `U`
+
+快捷鍵 2:
+
+1. 選取文字
+2. 按 `Command + Shift + P` 呼叫 `Command Palette`
+3. 可輸入 `title`, `lower case`, `upper case`
+
+    >Title -> 首字大寫
+    >
+    >Lower Case -> 全部小寫
+    >
+    >Upper Case -> 全部大寫
+
+
+## 搜尋/取代
+
+### 全專案搜尋 ＆ 取代 
+
+快捷鍵:
+
+```
+Command + Shitf + F
+```
+
+## 游標操作
+
+### 跳至特定行
+
+快捷鍵 1:
+
+1. 按 `Command + P`
+2. 輸入 `:行號`
+
+快捷鍵 2:
+
+1. 按 `Ctrl + G` 
+2. 輸入行號
+
+### 跳到對應的 大/中/小括號
+
+```
+Ctrl + M
+``` 
+
+## 捲軸操作
+
+### 移動捲軸
+
+快捷鍵:
+
+```
+Ctrl + Alt + 上/下 方向鍵
+```
+
+## 分頁操作
+
+### 分頁間切換
+
+```
+Command + Alt + 左/右 方向鍵
+```
+
+## 切割視窗
+
+SublimeText 也有相當簡便的視窗切割功能，對於多視窗編輯相當有幫助。
+
+### 水平切割視窗
+
+快捷鍵:
+
+```
+Command + Alt + Shift + 2/3
+```
+
+> 2 代表切 2 格
+> 3 代表切 3 格
+
+### 垂直切割視窗
+
+```
+Command + Alt + 1/2/3/4
+```
+
+### 回復單個視窗
+
+快捷鍵:
+
+```
+Command + Alt + 1
+```
+
+## 其他
+
+### 結束當前的 HTML 標籤
+
+例如輸入完 `<div>Hello, SublimeText` 之後，自動補完 `</div>`。對 Web 前端開發者相當方便的功能。
+
+快捷鍵:
+
+```
+Command + Alt + .
+```
+
+----
+
+更多快捷鍵:
+
+http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/keyboard_shortcuts_osx.html
+
+
+# SublimeText 基本設定 (Mac OS X)
 
 Preferences > Settings — User 可以打開設定檔 (快捷鍵: `command + ,`)
 
