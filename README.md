@@ -478,6 +478,9 @@ export GIT_EDITOR="subl --wait --new-window"
 # 參考資料
 
 [Sublime Text 3 Documentation](http://www.sublimetext.com/docs/3/)
+
 [Sublime Text Unofficial Documentation](https://sublime-text-unofficial-documentation.readthedocs.org/en/latest/)
+
 [Setting Up Sublime Text 3 for Full Stack Python Development](https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/)
+
 [Sublime Text 3 新手上路：必要的安裝、設定與基本使用教學](http://blog.miniasp.com/post/2014/01/07/Useful-tool-Sublime-Text-3-Quick-Start.aspx)
