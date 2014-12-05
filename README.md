@@ -127,7 +127,7 @@ Command + /
 
 ## 搜尋/取代
 
-### 全專案搜尋 ＆ 取代 
+### 全專案搜尋 ＆ 取代
 
 快捷鍵:
 
@@ -146,14 +146,14 @@ Command + Shitf + F
 
 快捷鍵 2:
 
-1. 按 `Ctrl + G` 
+1. 按 `Ctrl + G`
 2. 輸入行號
 
 ### 跳到對應的 大/中/小括號
 
 ```
 Ctrl + M
-``` 
+```
 
 ## 捲軸操作
 
@@ -186,7 +186,7 @@ Command + Alt + Shift + 2/3
 ```
 
 > 2 代表切 2 格
-> 
+>
 > 3 代表切 3 格
 
 ### 垂直切割視窗
@@ -260,7 +260,7 @@ Command + ,
         "*.pid",
         "*.pyc"
     ],
-	"folder_exclude_patterns": 
+	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
@@ -279,7 +279,7 @@ Command + ,
 		79
 	],
 	"tab_size": 4,
-	"translate_tabs_to_spaces": true, 
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"ensure_newline_at_eof_on_save": true,
 }
@@ -316,7 +316,7 @@ Command + ,
     "trim_trailing_white_space_on_save": true,
     "ensure_newline_at_eof_on_save": true,
     "tab_size": 4,
-    "translate_tabs_to_spaces": true, 
+    "translate_tabs_to_spaces": true,
     "use_tab_stops": true,
     "word_wrap": true,
     "wrap_width": 80,
@@ -343,53 +343,102 @@ Command + ,
 
 # SublimeText 套件
 
+SublimeText 的擴充套件庫也是為人津津樂道的功能之一，許多開發上的特殊需求，透過擴充套件就可以輕鬆被滿足。因此，學會如何運用 SublimeText 的套件也是相當重要的一件事。
+
 ## 必裝 Packages
 
-- Package Control https://sublime.wbond.net/installation#st3
+在所有套件中，最為重要的就是 `Package Control` ，因此本教學將之列為必裝。因為實在是沒有它會相當不方便。
 
-## 推薦的Packages
+因為目前是透過執行Python程式碼進行安裝，所以安裝的過程會有一些安全性的顧慮，本文就不贅述，安裝的步驟請參與以下官方連結：
+
+[Package Control](https://sublime.wbond.net/installation#st3)
+
+請注意官方網站上的警告，千萬不要在非官方網站上複製安裝 `Package Control` 的程式碼：
+
+```
+WARNING: Please do not redistribute the install code via another website. It will change with every release. Instead, please link to this page.
+```
+
+使用方法:
+
+1. 安裝完後，只要按 `Command + Shift + P` 呼叫 `Command Palette` 後，輸入 `install package` 就會出現以下畫面:
+
+    ![Package Control](./images/package_control.png)
+
+2. 按 `Enter` 後稍等一陣子會跳出另一個輸入框，只要輸入想安裝的套件名稱後，再按 `Enter` 即可安裝。
+
+## 推薦的 Packages
 
 ### 佈景主題類
 
-- Flatland
+- `Flatland`
 
-```
-{
-  "theme": "Flatland Dark.sublime-theme",
-  "color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme"
-}
-```
+    扁平式 UI 風格的佈景主題。
 
-- Color Scheme - Tomorrow Night 黑暗系的 Color Theme
+    設定範例(建議放在`使用者設定檔`內)：
 
-- Theme - Soda Dark Themes 
+    ```
+    {
+      "theme": "Flatland Dark.sublime-theme",
+      "color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme"
+    }
+    ```
 
-color theme 影響的是文字的配色
+    > `theme` 修改的是視窗主題
+    >
+    > `color_scheme` 修改的是文字配色主題
 
-theme 影響的是sublime text視窗的配色
+- `Color Scheme - Tomorrow Night`
 
-### vim 愛用者
+    黑暗系的 Color Theme
+
+### VIM 愛用者
 
 - Vintageous
 
+    安裝完後會按 `Shift + :` 就可以呼叫 `VIM Console` 。
+
+    示意圖：
+
+    ![VIM Console](./images/vim_console.png)
+
 ### 功能強化類
 
-- SideBarEnhancements 強化SideBar功能 
-- SublimeCodeIntel 自動補完功能
-- GitGutter 會在編輯器的行數顯示旁邊，依照 Git 編輯的狀態，顯示不同的圖標，例如新增刪除修改
-- sublimelinter 提供一個linter的框架，讓你可以安裝不同的 linter  https://github.com/SublimeLinter/SublimeLinter3 
-- HTML-CSS-JS Prettify 自動排版 (輸入指令HTMLPrettify 就可以自動排版)
+- SideBarEnhancements
 
+    強化 SideBar 的功能
 
-## 如何換佈景主題(Theme)
+- SublimeCodeIntel
+
+    強化自動補完功能，讓自動補完功能可以支援跨檔案搜尋
+
+- GitGutter
+
+    會在編輯器的行數顯示旁邊，依照 Git 編輯的狀態，顯示不同的圖標，例如新增刪除修改
+
+    示意圖:
+
+    ![GitGitter](./images/gitgutter.png)
+
+- SublimeLinter
+
+    提供一個linter的框架，讓你可以安裝不同的Linter
+
+    詳見[SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3)
+
+- HTML-CSS-JS Prettify
+
+    安裝後，在 `Command Palette` 輸入指令 `HTMLPrettify` 就可以自動針對HTML排版
+
+## 其他佈景主題(Color Themes/Themes)
 
 - colorsublime
-    
-        http://colorsublime.com/how-to-install-a-theme
 
-- 其他佈景主題
+    http://colorsublime.com/how-to-install-a-theme
 
-        https://github.com/mediachicken/sublimetext-defaultplus-theme
+- sublimetext-defaultplus-theme
+
+    https://github.com/mediachicken/sublimetext-defaultplus-theme
 
 
 ## 將 Sublime Text 設定為 終端機指令 之一
