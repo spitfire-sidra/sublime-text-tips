@@ -441,22 +441,25 @@ WARNING: Please do not redistribute the install code via another website. It wil
     https://github.com/mediachicken/sublimetext-defaultplus-theme
 
 
-## 將 Sublime Text 設定為 終端機指令 之一
+# 其他
+
+## 將 SublimeText 設定為終端機指令之一
+
+Mac OS X:
 
 ```
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 
-就可以用 `subl` 打開檔案
+輸入上述指令之後，就可以用 `subl` 打開檔案:
 
 ```
 subl helloworld.py
 ```
 
-## 將 sublime 作為 預設編輯器
+## 將 SublimeText 作為預設文字編輯器
 
-要先將Sublime Text 設定為 終端機指令 之一
-
+ps: 要先將 SublimeText 設定為終端機指令之一
 
 ```
 alias nano="subl"
@@ -464,29 +467,17 @@ export EDITOR="subl"
 ```
 
 
-## 將 Sublime 作为 Git 預設編輯器使用
+## 將 SublimeText 作为 Git 預設編輯器使用
 
-要先將Sublime Text 設定為 終端機指令 之一
+ps: 要先將 SublimeText 設定為終端機指令之一
 
 ```
 export GIT_EDITOR="subl --wait --new-window"
 ```
 
+# 參考資料
 
-## Python 開發者值得一看的設定文章
-
-https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
-
-
-## 前端開發者值得一看的設定文章
-
-http://blog.miniasp.com/post/2014/01/07/Useful-tool-Sublime-Text-3-Quick-Start.aspx
-
-
-
-
-
-## reference
-
-https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/
-
+[Sublime Text 3 Documentation](http://www.sublimetext.com/docs/3/)
+[Sublime Text Unofficial Documentation](https://sublime-text-unofficial-documentation.readthedocs.org/en/latest/)
+[Setting Up Sublime Text 3 for Full Stack Python Development](https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/)
+[Sublime Text 3 新手上路：必要的安裝、設定與基本使用教學](http://blog.miniasp.com/post/2014/01/07/Useful-tool-Sublime-Text-3-Quick-Start.aspx)
