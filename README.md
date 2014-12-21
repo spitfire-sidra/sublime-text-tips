@@ -392,6 +392,10 @@ WARNING: Please do not redistribute the install code via another website. It wil
 
     黑暗系的 Color Theme
 
+- `Seti_UI`
+
+    Sidebar 可以針對不同檔案顯示不同圖示的 theme, color theme
+
 ### VIM 愛用者
 
 - Vintageous
