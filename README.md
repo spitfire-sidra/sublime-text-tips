@@ -434,6 +434,14 @@ WARNING: Please do not redistribute the install code via another website. It wil
 
     安裝後，在 `Command Palette` 輸入指令 `HTMLPrettify` 就可以自動針對HTML排版
 
+## 離不開 Terminal 者
+
+- Glue
+
+    [Offical Site](https://sublime.wbond.net/packages/Glue)
+
+    [安裝教學](http://sweetme.at/2014/04/07/glue-a-terminal-for-sublime-text/)
+
 ## 其他佈景主題(Color Themes/Themes)
 
 - colorsublime
