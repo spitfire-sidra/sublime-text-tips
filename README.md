@@ -487,6 +487,16 @@ ps: 要先將 SublimeText 設定為終端機指令之一
 export GIT_EDITOR="subl --wait --new-window"
 ```
 
+## 安裝 GitHub/BitBucket 上的 Sublime Text 套件
+
+1. 打開 Command Palette ( `command + shift + p` )
+
+2. 輸入 `add repository`
+
+3. 輸入 `Github/BitBucket` 網址 (注意：要去掉結尾的 `.git` )
+
+4. 打開 `Package Ctrl` 輸入要安裝的套件名稱進行安裝
+
 # 參考資料
 
 [Sublime Text 3 Documentation](http://www.sublimetext.com/docs/3/)
